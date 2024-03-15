@@ -1,17 +1,13 @@
-let x = document.getElementById(rangeNumber)
-function generatePass() {
-    let pass = '';
-    let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
-        'abcdefghijklmnopqrstuvwxyz0123456789@#$';
- 
-    for (let i = 1; i <= x; i++) {
-        let char = Math.floor(Math.random()
-            * str.length + 1);
- 
-        pass += str.charAt(char)
-    }
- 
-    return pass;
+function generatePassword() {
+  let x = document.getElementById("rangeNumber").value;
+  let pass = "";
+  let str =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz0123456789@#$";
+
+  for (let i = 1; i <= x; i++) {
+    let char = Math.floor(Math.random() * str.length);
+    pass += str.charAt(char);
+  }
+
+  document.getElementById("passwordDisplay").innerText = pass;
 }
- 
-console.log(generatePass());
