@@ -9,5 +9,5 @@ function generatePassword() {
     pass += str.charAt(char);
   }
 
-  document.getElementById("passwordDisplay").innerText = pass;
+  document.getElementById("generated-passowrd").innerText = pass;
 }

@@ -13,14 +13,17 @@
 <body>
   <h1 class="main-heading">Generate your password</h1>
   <div class="main-content">
-    <div id="passwordDisplay"></div>
+    <div class="copy-field">
+      <span id="generated-password">Click generate</span>
+      <span id="copy-btn">asdf</span>
+    </div>
     <div class="range-wrap">
       <input id="rangeNumber" type="range" class="range" max="16">
       <output class="bubble"></output>
     </div>
     <button onclick="generatePassword()">Generate Password</button>
   </div>
-
+ 
 
 
     <script src="generator.js"></script>
