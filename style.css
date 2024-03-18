@@ -109,6 +109,8 @@ body{
   border-radius: 5px;
   font-size: 19px;
   overflow-x: scroll;
+  width: 70%;
+  color: #000;
 }
 
 #generated-password::-webkit-scrollbar{
@@ -120,5 +122,8 @@ body{
   padding: 0 24px;
   font-size: 18px;
   cursor: pointer;
-  
+}
+
+#copy-btn:hover{
+  background-color: #626262;
 }
