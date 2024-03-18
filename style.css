@@ -102,6 +102,9 @@ body{
 }
 
 #generated-password{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 12vw;
   padding: 12px 10px;
   border: 1px solid #212121;
@@ -119,13 +122,9 @@ body{
 
 #copy-btn{
   color: #fff;
-  padding: 0 24px;
+  padding: 1px 24px;
   font-size: 18px;
   cursor: pointer;
-}
-
-#copy-btn:hover{
-  background-color: #626262;
 }
 
 .input-container{

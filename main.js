@@ -4,6 +4,36 @@ Generator
 function generatePassword() {
   let x = document.getElementById("rangeNumber").value;
   let pass = "";
+
+    if (document.getElementById('input-cap').checked == true) {
+        console.log('fungujeto');
+        let pass = ( + "ahoj");
+      } else{
+
+      }
+      if (document.getElementById('input-let').checked == true) {
+        console.log('fungujeto');
+        let pass = ( + "1");
+      } else{
+
+      }
+      if (document.getElementById('input-num').checked == true) {
+        console.log('fungujeto');
+        let pass = ( + "2");
+      } else{
+
+      }
+      if (document.getElementById('input-num').checked == true) {
+        console.log('fungujeto');
+        let pass = ( + "3");
+      } else{
+
+      }    
+
+      console.log(pass)
+
+
+
   let str =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz0123456789@#$";
 
