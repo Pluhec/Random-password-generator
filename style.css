@@ -127,3 +127,14 @@ body{
 #copy-btn:hover{
   background-color: #626262;
 }
+
+.input-container{
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin: 50px;
+}
+
+.input-card{
+  padding: 15px;
+}
