@@ -4,38 +4,20 @@ Generator
 function generatePassword() {
   let x = document.getElementById("rangeNumber").value;
   let pass = "";
+  let str = "";
 
-    if (document.getElementById('input-cap').checked == true) {
-        console.log('fungujeto');
-        let pass = ( + "ahoj");
-      } else{
-
-      }
-      if (document.getElementById('input-let').checked == true) {
-        console.log('fungujeto');
-        let pass = ( + "1");
-      } else{
-
-      }
-      if (document.getElementById('input-num').checked == true) {
-        console.log('fungujeto');
-        let pass = ( + "2");
-      } else{
-
-      }
-      if (document.getElementById('input-num').checked == true) {
-        console.log('fungujeto');
-        let pass = ( + "3");
-      } else{
-
-      }    
-
-      console.log(pass)
-
-
-
-  let str =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz0123456789@#$";
+  if (document.getElementById('input-cap').checked) {
+    str += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  }
+  if (document.getElementById('input-let').checked) {
+    str += "abcdefghijklmnopqrstuvwxyz";
+  }
+  if (document.getElementById('input-num').checked) {
+    str += "0123456789";
+  }
+  if (document.getElementById('input-spe').checked) {
+    str += "!$#";
+  }
 
   for (let i = 1; i <= x; i++) {
     let char = Math.floor(Math.random() * str.length);
