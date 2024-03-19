@@ -17,26 +17,33 @@
       <span id="copy-btn">Copy</span>
     </div>
     <div class="range-wrap">
-      <input id="rangeNumber" type="range" class="range" max="16">
-      <output class="bubble"></output>
-      <div class="input-container">
-        <div class="input-card">
-          <p>ABC</p>
-          <input id="input-cap" type="checkbox">
-        </div>
-        <div id="" class="input-card">
-          <p>abc</p>
-          <input id="input-let" type="checkbox">
-        </div>
-        <div id="" class="input-card">
-          <p>123</p>
-          <input id="input-num" type="checkbox">
-        </div>
-        <div id="" class="input-card">
-          <p>!$#</p>
-          <input id="input-spe" type="checkbox">
+      <div class="flex-length">
+        <p>Passowrd length: <output class="bubble"></output></p>
+        <input id="rangeNumber" type="range" class="range" max="16">
+      </div>
+      <div class="characters-used-container">
+        <p >Characters used:</p>
+        <div class="input-container">
+          <div class="input-card">
+            <p>ABC</p>
+            <input  id="input-cap" type="checkbox" class="sc-gJwTLC ikxBAC">
+          </div>
+          <div id="" class="input-card">
+            <p>abc</p>
+            <input id="input-let" type="checkbox">
+          </div>
+          <div id="" class="input-card">
+            <p>123</p>
+            <input id="input-num" type="checkbox">
+          </div>
+          <div id="" class="input-card">
+            <p>!$#</p>
+            <input id="input-spe" type="checkbox">
+          </div>
         </div>
       </div>
+
+      
     </div>
     <button onclick="generatePassword()">Generate Password</button>
   </div>

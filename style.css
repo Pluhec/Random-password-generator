@@ -1,11 +1,10 @@
 body{
     padding: 0;
-    margin: 0;
+    margin: 0 300px;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    background-color: #55047b;
+    background-color: #767676;
     color: #fff;
-    margin: 1%;
     text-align: center;
 }
 
@@ -17,27 +16,6 @@ body{
 
 .range {
     width: 100%;
-}
-
-.bubble {
-    background: #ff2f2f;
-    color: #fff;
-    padding: 4px 12px;
-    position: absolute;
-    border-radius: 4px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 1%;
-}
-
-.bubble::after {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: #d41919;
-    top: -1px;
-    left: 50%;
 }
 
 
@@ -63,35 +41,7 @@ body{
   button {
     margin-top: 120px;
   }
-  .custom-btn {
-    width: 130px;
-    height: 40px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-  }
-  
-  .btn-1 {
-    background: rgb(197, 8, 8);
-    background: linear-gradient(0deg, rgb(198, 5, 5) 0%, rgrgb(151, 9, 216)00%);
-    border: none;
-  }
-  .btn-1:hover {
-     background: rgb(0,3,255);
-  background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
-  }
-  
+
 .copy-field{
   display: flex;
   align-items: center;
@@ -135,5 +85,23 @@ body{
 }
 
 .input-card{
-  padding: 15px;
+  display: flex;
+  padding: 5px;
+}
+
+.characters-used-container{
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.characters-used-container p{
+  margin: 0;
+  align-self: center;
+  width: 100px;
+}
+
+.flex-length{
+  display: flex;
+  justify-content: space-between;
 }
