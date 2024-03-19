@@ -1,4 +1,17 @@
 /******
+Page load checkboxes checked
+******/
+window.onload = onPageLoad();
+
+function onPageLoad() {
+  document.getElementById("input-cap").checked = true;
+  document.getElementById("input-let").checked = true;
+  document.getElementById("input-num").checked = true;
+  document.getElementById("input-spe").checked = true;
+}
+
+
+/******
 Generator
 ******/
 function generatePassword() {
